@@ -1,1 +1,6 @@
-Premiere sceance 
+Cahier de suivie :
+
+- 1er seance 1/09/22 :
+  Presentation et choix des projets
+  Prise en main du logiciel github
+  Premiere recherche documentaire
