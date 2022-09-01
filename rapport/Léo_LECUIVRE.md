@@ -9,9 +9,3 @@ Séance n°1 :
 - Répartition des diffrerntes taches (Première passe provisoire)
 - Début des recherches sur les varroa et les differentes soution d'élimination
 - Première approche du tapis roulant
-
-  
-T NUL
-
-
-
