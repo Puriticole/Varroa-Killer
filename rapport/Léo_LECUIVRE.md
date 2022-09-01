@@ -11,7 +11,7 @@ Séance n°1 :
 - Première approche du tapis roulant
 
   
-
+T NUL
 
 
 
