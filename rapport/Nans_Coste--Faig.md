@@ -4,3 +4,6 @@ Cahier de suivie :
   Presentation et choix des projets
   Prise en main du logiciel github
   Premiere recherche documentaire
+
+- 2iéme seance 2/09/22 :
+  
