@@ -26,4 +26,8 @@ Séance 2 : Régulation de la quantité de CO2 pour maxime et Régulation de la 
            -> Cablage des capteurs 18B20 https://www.raspberryme.com/micropython-capteur-de-temperature-ds18b20-avec-esp32-et-esp8266/
            ->                            https://arduino-france.site/ds18b20-arduino/
            
+Séance 3 : Cablage de la carte ESP32 avec FTDI USB to Serial Cable 
+![image](https://user-images.githubusercontent.com/112617884/189360778-c8886a6e-c592-4317-80cd-269decfa1934.png)
+![image](https://user-images.githubusercontent.com/112617884/189360934-a841aa2a-c13c-46d5-93b7-5d133744d8dc.png)
+Branchement de la carte permetant de téléverser les programes sur la carte ESP32
            
