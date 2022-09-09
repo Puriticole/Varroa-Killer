@@ -6,7 +6,7 @@ Première entrée - 01.09.2022 - 11h22
 - Coste--Faig & LeCuivre : Comptage des varroas avec une caméra et gestion de l'évacuation des cadavres avec un tapis roulant.
 - Canella & Frantzen : Régulation de l'injection de CO2 & de la température dans la ruche dans le but d'exterminer les varroa.
     
-### Objectif pour notre binôme :
+### Objectif pour notre binôme 
 Répérage des différentes techniques de déparasitage des varroas 
 - Trouver le taux de CO2 mortel pour les varroa et les abeilles ainsi que le temps d'exposition.
 - On sait que les varroa ne survivent pas au-dessus de 41-42°C, les abeilles survivent jusqu'a 45°C.
@@ -30,7 +30,7 @@ Le projet nous impose l'utilisation d'un ESP32, du logiciel Eagle pour la concep
 ____________________________________________________________________________________________________________________________
 Seconde entrée - 02.09.2022 - 17h45 - Sophia Antipolis - Polytech
 
-## Définition des des objectifs de la séance :
+## Définition des des objectifs de la séance 
  Faire fonctionner le capteur pour la mise en place d'une expérimentation sur une séance prochaine en réalistite.
 
  Action de la séance :
@@ -47,7 +47,7 @@ L'objectif est que dans deux séances, nous puissions mettre en place une expér
 _____________________________________________________________________________________________________________________________
 Troisième entrée - 09.09.2022 - 18h51 - Sophia Antipolis - Polytech
 
-##Objectif de la séance :
+## Objectif de la séance 
 Partiellement atteint.
 Le capteur CCS811 U5 sur la carte CO2 est désormais fonctionnel. Nous pouvons récupérer la valeur de CO2 en ppm ( partie par millions ) compossant l'environnement du capteur. On observe une consommation d'environ 30 à 40 mA lorsque celui-ci est fonctionnel. Cela est cohérent par rapport à la valeur de la datasheet.
 Nous avons aussi l'information sur COVT (composés oragniques totaux volatils), cependant cette information ne nous intéresse pas.
@@ -59,10 +59,10 @@ De plus, j'ai rencontrés plusieurs difficultés sur la mise en oeuvre du capteu
    - Problème sur la pin Wake. Il a fallu initialiser cette pin Wake à la masse pour que "réveiller" le capteur. Cette pin nous permettra de mettre en sommeil le capteur. Je n'ai pas encore mesuré la différence de consommation entre le capteur non alimenté et le capteur en mode sommeil.
    - Problème de stabilité en alimentation de la carte. J'ai remarqué plusieurs faux contact qui sont reliés à la position de la carte. Si la carte viens à bouger quelque peu, il peu avoir des problèmes d'alimentation ou de communication série. De plus, le port USB de mon ordinateur ne fournie qu'une tension de 2.7V au système. Ce qui n'atteint pas la tension nominale préconisée par la datasheet.
 
-##Apprentissage de la séance :
+## Apprentissage de la séance 
 J'ai pu comprendre une petite partie des mécanisme de l'ESP32. De plus, afin de régler le problème de stabilité en tension, j'ai pu tester d'alimenter la carte avec une alimentation stabilisé en 3.3V.
 
-##Objectif de la prochaine séance :
+## Objectif de la prochaine séance 
 Soudure du capteurs de CO2 supplémentaire.
 Mise en place d'un bus I2C pour la mise en oeuvre de plusieurs capteurs CO2 (au moins 2).
 Préparation d'un test dans une ruche avec une injection de CO2 pour déterminer la faisabilité de l'extermination des parasites.
