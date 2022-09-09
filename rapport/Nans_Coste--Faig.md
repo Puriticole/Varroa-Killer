@@ -15,4 +15,5 @@ Cahier de suivie :
   Decouverte et test de la carte Maixduino
 
 - 3iéme seance 9/09/22 :
-  
+  Réalisation d'un plan 3d d'une ruche.
+  Test de la camera du module Maixduino.
