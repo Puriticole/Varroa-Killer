@@ -16,3 +16,17 @@ Définition des rôles des binômes :
  
  
 - FRANTZEN, CANELLA ---> Réalisation d'un system d'elimination des varroa en utilisant la chaleur ou du co2
+
+Séance n°2 :
+
+- Découverte de la Carte Maixduino
+- Installation de l'environnement arduino necessaire au fonctionnement de maixduino sur ide arduino
+- allumage de leds via le maixduino
+- Géstion de l'affichage sur écran LCD 
+
+Séance n°3 :
+
+- Reprise de la découverte de la Carte Maixduino
+- Découverte de la caméra du maixduino
+- affichage de la caméra du maixduino sur ecran LCD
+- Début de la phase de découverte de la détéction de formes sur image via python
