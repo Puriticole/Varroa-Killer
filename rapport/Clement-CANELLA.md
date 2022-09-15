@@ -31,3 +31,7 @@ Séance 3 : Cablage de la carte ESP32 avec FTDI USB to Serial Cable
 ![image](https://user-images.githubusercontent.com/112617884/189360934-a841aa2a-c13c-46d5-93b7-5d133744d8dc.png)
 Branchement de la carte permetant de téléverser les programes sur la carte ESP32
            
+Séance 4 : Fin du cablage de la carte ESP32 avec FTDI USB to Serial Cable 
+
+           -> Nous n'utilisons pas les ports DTR et CTS de la carte FTDI
+           -> Nous arrivons a communiquer avec la ESP32
