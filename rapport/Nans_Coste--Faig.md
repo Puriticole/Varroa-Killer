@@ -17,3 +17,8 @@ Cahier de suivie :
 - 3iéme seance 9/09/22 :
   Réalisation d'un plan 3d d'une ruche.
   Test de la camera du module Maixduino.
+  
+- 4iéme seance 15/09/22 :
+  Recherche documentation pour realiser la detection des varroas garce au image de la camera. 
+  Problematique : Pour tous ce qui est du traitement d'image par le module Maixduino, le configuration ce fait uniquement par du python et non grace à l'IDE arduino.
+  
