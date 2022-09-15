@@ -31,7 +31,7 @@ Séance n°3 :
 - affichage de la caméra du maixduino sur ecran LCD
 - Début de la phase de découverte de la détéction de formes sur image via python
 
-Séance n°3 :
+Séance n°4 :
 
 - Reprise de la phase de découverte de la détéction de formes sur image via python
 - prise de photos via l'IDE Arduino
