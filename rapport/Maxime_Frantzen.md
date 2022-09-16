@@ -66,3 +66,39 @@ J'ai pu comprendre une petite partie des mécanisme de l'ESP32. De plus, afin de
 Soudure du capteurs de CO2 supplémentaire.
 Mise en place d'un bus I2C pour la mise en oeuvre de plusieurs capteurs CO2 (au moins 2).
 Préparation d'un test dans une ruche avec une injection de CO2 pour déterminer la faisabilité de l'extermination des parasites.
+
+
+__________________________________________________________________________________________________________________________________
+Quatrième entrée - 16.09.2022 - 8h17 - Sophia Antipolis - Polytech
+
+## Objectif de la séance 
+Non atteint, remis à la prochaine séance.
+Cause : Le capteur en CO2 nécessaire à la réalisation des objectifs n'a pas été approvisionné. 
+Nouvelle mission confiée : Faire fonctionner le capteur BMP280 sur le PCB CO2. De plus, je dois améliorer le programme du CSS811 pour intégrer ses fonctions spécifiques.
+
+## Actions de la séance :
+
+Repérage de la faisabilité du fonctionnement du BMP280 sur le PCB. L'empreinte sur celui-ci n'est pas la bonne. En effet, le capteur comporte 6 pins et l'empreinte 4.
+La solution choisie est de souder une interface pour connecter notre capteur avec des fils.
+
+J'ai ensuite lu la datasheet du CSS811 pour trouver les infomations suivantes :
+- Mesure toutes les 10 secondes (mode 2)
+- Validité des données
+- Comment récupérer l'information en mode 2 
+Je n'ai pas encore toruvé toutes les informations.
+
+Pour finir, j'ai aidé mon binôme sur la réalistion de l'électronique d'interface dans le but de téléverser des programmes sur un chip ESP-32 sans interface.
+
+## Apprentissage de la séance
+J'ai appris le positionnement d'un condensateur de déphasage dans un système, qui doit être le plus proche du chip possible.
+De plus, nous avons aussi appris que le chip ESP32 se reset au démarrage si celui-ci ne reçoit pas la puissance nécessaire à son initialisation.
+Pour finir, placer un condensateur entre la pin EN (sert au reset du chip) et le GND du chip, permet de fixer le potentiel de la pin EN pendant l'alimentation du chip. Cette astuce évite un rebootage en boucle de l'ESP32.
+
+J'ai appris les différents fonctionnements possible du CSS811, notamment en agissant sur ses registres. Ces différents type de fonctionnement permettront d'économiser l'énergie.
+
+## Objectif de la prochaine séance 
+
+Faire fonctionner le capteur BMP280. 
+Mise à jour du programme du CSS811 pour prise en compte des fonctions d'économies d'énergies.
+Souder et faire fonctionner les deux CSS811 en I2C.
+Report des objectifs de la séance précédente.
