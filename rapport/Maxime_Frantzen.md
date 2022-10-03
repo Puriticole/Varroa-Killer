@@ -102,3 +102,27 @@ Faire fonctionner le capteur BMP280.
 Mise à jour du programme du CSS811 pour prise en compte des fonctions d'économies d'énergies.
 Souder et faire fonctionner les deux CSS811 en I2C.
 Report des objectifs de la séance précédente.
+
+_____________________________________________________________________________________________________________________________________
+Cinqième entrée - 03.10.2022 - 16h36 - Sophia Antipolis
+
+
+## Objectif de la séance 
+Non atteint, remis à la prochaine séance.
+Cause : Manque d'information sur l'existence de la libraire SparkFunCSS8111.
+
+## Actions de la séance :
+
+Lecture de la datasheet du capteur et questionnement sur la communication I2C et l'accession des registres du capteurs. Repérages des registres et des bits nécessaire à la réalisation des objectifs demandés. Ecriture d'un programmme béta.
+
+## Apprentissage de la séance
+
+Le fonctionnement du capteur, la communication I2C. L'excistence d'une blibliothéque faite par le fabricant regroupant toutes les fonctions que j'ai voulu coder. 
+
+
+## Objectif de la prochaine séance 
+
+Faire fonctionner le capteur BMP280. 
+Mise à jour du programme du CSS811 pour prise en compte des fonctions d'économies d'énergies.
+Souder et faire fonctionner les deux CSS811 en I2C.
+Report des objectifs de la séance précédente.
