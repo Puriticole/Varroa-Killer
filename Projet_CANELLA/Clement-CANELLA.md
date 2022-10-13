@@ -42,5 +42,6 @@ Séance 5 :  03-10
            -> Nom du fichier : com18B20_03-10.ino
            
 Scéance 6 : 13-10
-            ![image](https://user-images.githubusercontent.com/112617884/195543164-0bad06e8-7334-4703-aa76-3087dcb779f7.png)
+
+![image](https://user-images.githubusercontent.com/112617884/195543164-0bad06e8-7334-4703-aa76-3087dcb779f7.png)
 
