@@ -44,4 +44,5 @@ Séance 5 :  03-10
 Scéance 6 : 13-10
 
 ![image](https://user-images.githubusercontent.com/112617884/195543164-0bad06e8-7334-4703-aa76-3087dcb779f7.png)
-
+           -> Il faut regarder la régulation de la dissipation de la puissance dans les résistances thermiques grace au PWM (pulse width modulation) 
+              P= Pinstantané * t/T
