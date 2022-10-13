@@ -22,3 +22,8 @@ Cahier de suivie :
   Recherche documentation pour realiser la detection des varroas garce au image de la camera. 
   Problematique : Pour tous ce qui est du traitement d'image par le module Maixduino, le configuration ce fait uniquement par du python et non grace à l'IDE arduino.
   
+- 5ième seance 3/10/22 :
+  On a commencé à programmer en Python afin de réaliser une detection sur image.
+  
+- 6ième seance 13/10/22 :
+  
