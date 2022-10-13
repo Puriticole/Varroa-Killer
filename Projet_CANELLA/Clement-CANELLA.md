@@ -36,8 +36,8 @@ Séance 4 : Fin du cablage de la carte ESP32 avec FTDI USB to Serial Cable
            -> Nous n'utilisons pas les ports DTR et CTS de la carte FTDI
            -> Nous arrivons a communiquer avec la ESP32
        
-Séance 5 :
+Séance 5 :  03-10
            -> téléchargement des bibliothèques OneWire et DallasTemperature
            -> communication avec le capteur 18B20 (réception de la température)
-           
+           -> Nom du fichier : com18B20_03-10.ino
            
