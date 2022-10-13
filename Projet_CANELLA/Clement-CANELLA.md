@@ -44,5 +44,7 @@ Séance 5 :  03-10
 Scéance 6 : 13-10
 
 ![image](https://user-images.githubusercontent.com/112617884/195543164-0bad06e8-7334-4703-aa76-3087dcb779f7.png)
+
            -> Il faut regarder la régulation de la dissipation de la puissance dans les résistances thermiques grace au PWM (pulse width modulation) 
               P= Pinstantané * t/T
+           -> Le lien vers le ventilo choisi : https://fr.aliexpress.com/item/1005003284761769.html?spm=a2g0o.detail.1000014.11.8ab61ca2U5oJsV&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.14452.226710.0&scm_id=1007.14452.226710.0&scm-url=1007.14452.226710.0&pvid=3db608ed-b30f-4c5d-a034-b0428ab793c1&_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.14452.226710.0,pvid:3db608ed-b30f-4c5d-a034-b0428ab793c1,tpp_buckets:668%232846%238107%231934&pdp_ext_f=%7B%22sku_id%22%3A%2212000025019612448%22%2C%22sceneId%22%3A%2230050%22%7D&pdp_npi=2%40dis%21EUR%211.89%211.65%21%21%21%21%21%40211b442116656511210336684e0b5d%2112000025019612448%21rec&ad_pvid=202210130152010484380121356153317682_2
