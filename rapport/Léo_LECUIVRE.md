@@ -45,3 +45,19 @@ Séance n°5 : 03/10/2022
 - Dirrection sur python pour réaliser le projet
 - Test approfondi sur les librairies et codes python pour detection de formes
 - Qualité médiocre des images en live car memoire saturé
+
+Séance n°6 : 13/10/2022
+
+- Lectures de DataSheets sur le maixduino
+- La camméra n'a pas un angle de vue suffisant pour voir tout le tapis
+- Elle serait trop en hauteur 
+- Recherche d'une lentille grand angle pour contourner le problème
+
+Séance n°7 : 28/10/2022
+
+- Analyse des Pins de la caméra pour voir si une autre grand angle est compatible
+- Test du module ESP32 sur maixduino
+- Connexion sur un réseau wifi connu
+- Echanges de données
+- Tentative d'envoi de fichiers 
+
