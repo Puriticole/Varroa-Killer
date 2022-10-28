@@ -26,4 +26,7 @@ Cahier de suivie :
   On a commencé à programmer en Python afin de réaliser une detection sur image.
   
 - 6ième seance 13/10/22 :
-  
+  Avancement sur la réalisation du plan 3d de la ruche ainsi que du rajout pour la systeme de recuperation des varroas morts
+
+- 7ième seance 28/10/22 : 
+  Détection d'un probleme d'angle de caméra. L'angle de vue de la caméra actuellement reliée sur la carte Maixduino est bien trop petit, ainsi pour pouvoir avoir la     totalité du tapis visible à la caméra, il faudrait que la caméra soit placée à environ 1m20 de haut ce qui est bien trop haut pour pouvoir detecter les varroas     sur le tapis. 
