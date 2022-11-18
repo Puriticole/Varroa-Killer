@@ -29,4 +29,6 @@ Cahier de suivie :
   Avancement sur la réalisation du plan 3d de la ruche ainsi que du rajout pour la systeme de recuperation des varroas morts
 
 - 7ième seance 28/10/22 : 
-  Détection d'un probleme d'angle de caméra. L'angle de vue de la caméra actuellement reliée sur la carte Maixduino est bien trop petit, ainsi pour pouvoir avoir la     totalité du tapis visible à la caméra, il faudrait que la caméra soit placée à environ 1m20 de haut ce qui est bien trop haut pour pouvoir detecter les varroas     sur le tapis. 
+  Détection d'un probleme d'angle de caméra. L'angle de vue de la caméra actuellement reliée sur la carte Maixduino est bien trop petit, ainsi pour pouvoir avoir la     totalité du tapis visible à la caméra, il faudrait que la caméra soit placée à environ 1m20 de haut ce qui est bien trop haut pour pouvoir detecter les varroas     sur le tapis.
+- 8iéme seance 18/11/22 :
+  Une aide donnée par le professeur pour la mise en application du traitement des images directement sur l'ESP32. La mise en place sur l'IDE Arduino fut compliquer.
