@@ -8,34 +8,6 @@
   https://github.com/sparkfun/CCS811_Air_Quality_Breakout
   https://github.com/sparkfun/SparkFun_CCS811_Arduino_Library
 
-  This example configures the nWAKE and nINT pins.
-  The interrupt pin is configured to pull low when the data is
-  ready to be collected.
-  The wake pin is configured to enable the sensor during I2C communications
-
-  Hardware Connections (Breakoutboard to Arduino):
-  3.3V to 3.3V pin
-  GND to GND pin
-  SDA to A4
-  SCL to A5
-  NOT_INT to D6
-  NOT_WAKE to D5 (For 5V arduinos, use resistor divider)
-    D5---
-         |
-         R1 = 4.7K
-         |
-         --------NOT_WAKE
-         |
-         R2 = 4.7K
-         |
-        GND
-
-  Resources:
-  Uses Wire.h for i2c operation
-
-  Development environment specifics:
-  Arduino IDE 1.8.1
-
   This code is released under the [MIT License](http://opensource.org/licenses/MIT).
 
   Please review the LICENSE.md file included with this example. If you have any questions
