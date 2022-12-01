@@ -35,6 +35,14 @@
 #define ADD3 12
 #define ADD2 4
 
+/*
+ * Définition du mode de mesure des capteurs
+ * Mode 0 = Idle
+ * Mode 1 = 1s
+ * Mode 2 = 10s
+ * Mode 3 = 60s
+ * Mode 4 = 250ms
+ */
 #define MODE_ALL_CCS 1
 
 //Constante permettant la gestion de notre carte
@@ -98,10 +106,11 @@ void setup()
   returnCode_2 = U4.enableInterrupts();
   Serial.print("Interrupt configuation exited with: ");
   Serial.println(U4.statusString(returnCode_2));
-  
-  delay(30);
 
-  
+
+  //Delay qui sera repercuté entre les deux mesures
+  delay(100);
+
   digitalWrite(PIN_NOT_WAKE_2, 1); //Sleep
   
   //Saut de line pour faciliter la lecture
@@ -166,8 +175,8 @@ void loop()
 
     Serial.print("U4_CO2[");
     Serial.print(U4.getCO2());
-    Serial.print("] millis[");
-    Serial.print(millis());
+    Serial.print("] s[");
+    Serial.print(millis()/1000);
     Serial.print("]");
     Serial.println();
 
@@ -192,8 +201,8 @@ void loop()
 
     Serial.print("U5_CO2[");
     Serial.print(U5.getCO2());
-    Serial.print("] millis[");
-    Serial.print(millis());
+    Serial.print("] s[");
+    Serial.print(millis()/1000.0);
     Serial.print("]");
     Serial.println();
 
