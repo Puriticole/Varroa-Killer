@@ -59,3 +59,11 @@ Scéance 8 : 18-11
            -> J'ai pu tester le fonctionnement de 4 capteurs 18B20 sur la meme entrée de l'ESP32 ce qui à bien fonctionner. 
            -> J'ai soudé les différents composants de la carte de régulation des résistances thermiques et des ventilateurs. 
            -> Petite mise à jours au niveau du code. 
+           
+Scéance 9 : 25-11
+           -> J'ai finalisé les soudures de la carte permettant la régulation des résistances thermiques et des ventilateurs.
+           -> J'ai ajouter au montage éléctrique la carte soudée ainsi qu'un ventilateur. 
+           -> je me suis renseigné pour controler les ventilateurs via la carte ESP32 en pwm
+           
+Scéance 10 : 01-12
+           -> 
