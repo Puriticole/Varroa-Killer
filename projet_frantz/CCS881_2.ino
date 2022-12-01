@@ -35,11 +35,13 @@
 #define ADD3 12
 #define ADD2 4
 
+#define MODE_ALL_CCS 1
+
 //Constante permettant la gestion de notre carte
 #define MEASURE 13
 
-CCS811 myCCS811_3(CCS811_ADDR_H);
-CCS811 myCCS811_2(CCS811_ADDR_H);
+CCS811 U5(CCS811_ADDR_H);
+CCS811 U4(CCS811_ADDR_H);
 
 bool alt = false;
 
@@ -80,26 +82,29 @@ void setup()
   //Affichages des codes d'erreurs : 
 
   //This begins the CCS811 sensor and prints error status of .beginWithStatus()
-  CCS811Core::CCS811_Status_e returnCode_2 = myCCS811_2.beginWithStatus();
+  CCS811Core::CCS811_Status_e returnCode_2 = U4.beginWithStatus();
   Serial.print("CCS811_2 begin exited with: ");
   //Pass the error code to a function to print the results
-  Serial.println(myCCS811_2.statusString(returnCode_2));
+  Serial.println(U4.statusString(returnCode_2));
 
-  //This sets the mode to 60 second reads, and prints returned error status.
-  returnCode_2 = myCCS811_2.setDriveMode(1);
+  //Mode 
+  returnCode_2 = U4.setDriveMode(MODE_ALL_CCS);
   Serial.print("Mode request exited with: ");
-  Serial.println(myCCS811_2.statusString(returnCode_2));
+  Serial.println(U4.statusString(returnCode_2));
 
   //Configure and enable the interrupt line,
   //then print error status
   pinMode(PIN_NOT_INT_2, INPUT_PULLUP);
-  returnCode_2 = myCCS811_2.enableInterrupts();
+  returnCode_2 = U4.enableInterrupts();
   Serial.print("Interrupt configuation exited with: ");
-  Serial.println(myCCS811_2.statusString(returnCode_2));
+  Serial.println(U4.statusString(returnCode_2));
   
   delay(30);
-  digitalWrite(PIN_NOT_WAKE_2, 1); //Sleep
 
+  
+  digitalWrite(PIN_NOT_WAKE_2, 1); //Sleep
+  
+  //Saut de line pour faciliter la lecture
   Serial.println();Serial.println();
 
   //Démarage du capteur 3 :
@@ -109,22 +114,22 @@ void setup()
   //Affichages des codes d'erreurs : 
 
   //This begins the CCS811 sensor and prints error status of .beginWithStatus()
-  CCS811Core::CCS811_Status_e returnCode_3 = myCCS811_3.beginWithStatus();
+  CCS811Core::CCS811_Status_e returnCode_3 = U5.beginWithStatus();
   Serial.print("CCS811_3 begin exited with: ");
   //Pass the error code to a function to print the results
-  Serial.println(myCCS811_3.statusString(returnCode_3));
+  Serial.println(U5.statusString(returnCode_3));
 
-  //This sets the mode to 60 second reads, and prints returned error status.
-  returnCode_3 = myCCS811_3.setDriveMode(1);
+  //Mode
+  returnCode_3 = U5.setDriveMode(MODE_ALL_CCS);
   Serial.print("Mode request exited with: ");
-  Serial.println(myCCS811_3.statusString(returnCode_3));
+  Serial.println(U5.statusString(returnCode_3));
 
   //Configure and enable the interrupt line,
   //then print error status
   pinMode(PIN_NOT_INT_3, INPUT_PULLUP);
-  returnCode_3 = myCCS811_3.enableInterrupts();
+  returnCode_3 = U5.enableInterrupts();
   Serial.print("Interrupt configuation exited with: ");
-  Serial.println(myCCS811_3.statusString(returnCode_3));
+  Serial.println(U5.statusString(returnCode_3));
 
   delay(30);
   digitalWrite(PIN_NOT_WAKE_3, 1); //Sleep
@@ -157,10 +162,10 @@ void loop()
     //Need to wait at least 50 us
     delay(1);
     //Interrupt signal caught, so cause the CCS811 to run its algorithm
-    myCCS811_2.readAlgorithmResults(); //Calling this function updates the global tVOC and CO2 variables
+    U4.readAlgorithmResults(); //Calling this function updates the global tVOC and CO2 variables
 
-    Serial.print("CO2_2[");
-    Serial.print(myCCS811_2.getCO2());
+    Serial.print("U4_CO2[");
+    Serial.print(U4.getCO2());
     Serial.print("] millis[");
     Serial.print(millis());
     Serial.print("]");
@@ -183,10 +188,10 @@ void loop()
     //Need to wait at least 50 us
     delay(1);
     //Interrupt signal caught, so cause the CCS811 to run its algorithm
-    myCCS811_3.readAlgorithmResults(); //Calling this function updates the global tVOC and CO2 variables
+    U5.readAlgorithmResults(); //Calling this function updates the global tVOC and CO2 variables
 
-    Serial.print("CO2_3[");
-    Serial.print(myCCS811_3.getCO2());
+    Serial.print("U5_CO2[");
+    Serial.print(U5.getCO2());
     Serial.print("] millis[");
     Serial.print(millis());
     Serial.print("]");
@@ -204,7 +209,7 @@ void loop()
 //saved within the error register.
 void printSensorError()
 {
-  uint8_t error = myCCS811_3.getErrorRegister();
+  uint8_t error = U5.getErrorRegister();
 
   if (error == 0xFF) //comm error
   {
