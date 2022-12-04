@@ -66,4 +66,5 @@ Scéance 9 : 25-11
            -> je me suis renseigné pour controler les ventilateurs via la carte ESP32 en pwm
            
 Scéance 10 : 01-12
-           -> 
+           -> J'arrive a faire tourner les ventilateurs mais pas encore à réguler leurs vitesse de rotaion. 
+           -> J'ai commencé à réaliser le code Arduino qui nous permetra de controler les ventilateurs. 
