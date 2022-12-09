@@ -38,4 +38,7 @@ Cahier de suivie :
   On a des problemes pour la mise en application sur la carte Maxduino à travers l'IDE Arduino. 
   
 - 10iéme seance 1/12/22 :
-  
+  On a reussi a faire fonctionner le maixduino à travers l'IDE Arduino. On essaye de faire fonctionner le WiFi de l'ESP32 pour pouvoir transmettre des données.
+
+- 11iéme seance 9/12/22 :
+  https://www.upesy.fr/blogs/tutorials/how-to-connect-wifi-acces-point-with-esp32
