@@ -15,8 +15,6 @@
 
   Distributed as-is; no warranty is given.
 ******************************************************************************/
-
-
 #include <Wire.h>
 
 #include <SparkFunCCS811.h> //Click here to get the library: http://librarymanager/All#SparkFun_CCS811
@@ -25,17 +23,26 @@
 #define CCS811_ADDR_H 0x5A //Alternate I2C Address
 
 //Définition des entrées de nos capteurs
+
+//U5
 #define PIN_NOT_WAKE_3 27
 #define PIN_NOT_INT_3 35
+#define ADD3 12
 
+//U4
 #define PIN_NOT_WAKE_2 26
 #define PIN_NOT_INT_2 32
+#define ADD2 4
+
+//U3
+#define PIN_NOT_WAKE_1 16
+#define PIN_NOT_INT_1 17
+#define ADD1 2
+
 
 #define SDA 21
 #define SCL 22
 
-#define ADD3 12
-#define ADD2 4
 
 /*
  * Définition du mode de mesure des capteurs
@@ -52,6 +59,7 @@
 
 CCS811 U5(CCS811_ADDR_H);
 CCS811 U4(CCS811_ADDR_H);
+CCS811 U3(CCS811_ADDR_H);
 
 bool alt = false;
 
@@ -69,23 +77,53 @@ void setup()
   //Alimentation du capteur
   pinMode(MEASURE, OUTPUT);
   digitalWrite(MEASURE, HIGH);
-
+  
   pinMode(ADD3, OUTPUT);
   digitalWrite(ADD3, LOW);
-
+  pinMode(PIN_NOT_WAKE_3, OUTPUT);
+  digitalWrite(PIN_NOT_WAKE_3, 1); //Start asleep
+  
   pinMode(ADD2, OUTPUT);
   digitalWrite(ADD2, LOW);
-
   //Configure the wake line
   pinMode(PIN_NOT_WAKE_2, OUTPUT);
   digitalWrite(PIN_NOT_WAKE_2, 1); //Start asleep
-
-  pinMode(PIN_NOT_WAKE_3, OUTPUT);
-  digitalWrite(PIN_NOT_WAKE_3, 1); //Start asleep
-
+  
+  pinMode(ADD1, OUTPUT);
+  digitalWrite(ADD1, LOW);
+  pinMode(PIN_NOT_WAKE_1, OUTPUT);
+  digitalWrite(PIN_NOT_WAKE_1, 1); //Start asleep
+  
   Wire.begin(SDA,SCL);
 
-  //Démarage du capteur 2 :
+  //Démarage du capteur 3 :
+  
+  digitalWrite(PIN_NOT_WAKE_1, 0); //Start
+
+  //Affichages des codes d'erreurs : 
+
+  //This begins the CCS811 sensor and prints error status of .beginWithStatus()
+  CCS811Core::CCS811_Status_e returnCode_1 = U3.beginWithStatus();
+  Serial.print("CCS811_3 begin exited with: ");
+  //Pass the error code to a function to print the results
+  Serial.println(U3.statusString(returnCode_1));
+
+  //Mode
+  returnCode_1 = U3.setDriveMode(MODE_ALL_CCS);
+  Serial.print("Mode request exited with: ");
+  Serial.println(U3.statusString(returnCode_1));
+
+  //Configure and enable the interrupt line,
+  //then print error status
+  pinMode(PIN_NOT_INT_3, INPUT_PULLUP);
+  returnCode_1 = U3.enableInterrupts();
+  Serial.print("Interrupt configuation exited with: ");
+  Serial.println(U3.statusString(returnCode_1));
+
+  delay(100);
+  digitalWrite(PIN_NOT_WAKE_1, 1); //Sleep
+
+  //Démarage du capteur 4 :
 
   digitalWrite(PIN_NOT_WAKE_2, 0); //Demarrage
 
@@ -118,7 +156,7 @@ void setup()
   //Saut de line pour faciliter la lecture
   Serial.println();Serial.println();
 
-  //Démarage du capteur 3 :
+  //Démarage du capteur 5 :
 
   digitalWrite(PIN_NOT_WAKE_3, 0); //Start
 
@@ -142,8 +180,11 @@ void setup()
   Serial.print("Interrupt configuation exited with: ");
   Serial.println(U5.statusString(returnCode_3));
 
-  delay(30);
+  delay(100);
   digitalWrite(PIN_NOT_WAKE_3, 1); //Sleep
+
+  //Saut de line pour faciliter la lecture
+  Serial.println();Serial.println();
 }
 //---------------------------------------------------------------
 void loop()
@@ -157,13 +198,30 @@ void loop()
     previousTime = currentTime;
   }
   
-  if(alt == true) {
-    digitalWrite(PIN_NOT_WAKE_3, 1); //Sleep
-    digitalWrite(PIN_NOT_WAKE_2, 0); //Start
-  }else{
-    digitalWrite(PIN_NOT_WAKE_3, 0); //Start
-    digitalWrite(PIN_NOT_WAKE_2, 1); //Sleep
+
+  //Look for interrupt request from CCS811
+  if (digitalRead(PIN_NOT_INT_1) == 0)
+  {
+    //Wake up the CCS811 logic engine
+    digitalWrite(PIN_NOT_WAKE_1, 0);
+    //Need to wait at least 50 us
+    delay(1);
+    //Interrupt signal caught, so cause the CCS811 to run its algorithm
+    U3.readAlgorithmResults(); //Calling this function updates the global tVOC and CO2 variables
+
+    Serial.print("U3_CO2[");
+    Serial.print(U3.getCO2());
+    Serial.print("] s[");
+    Serial.print(millis()/1000);
+    Serial.print("]");
+    Serial.println();
+
+    //Now put the CCS811's logic engine to sleep
+    digitalWrite(PIN_NOT_WAKE_1, 1);
+    //Need to be asleep for at least 20 us
+    delay(1);
   }
+  delay(1); //cycle kinda fast
 
   //Look for interrupt request from CCS811
   if (digitalRead(PIN_NOT_INT_2) == 0)
@@ -206,6 +264,7 @@ void loop()
     Serial.print("] s[");
     Serial.print(millis()/1000.0);
     Serial.print("]");
+    Serial.println();
     Serial.println();
 
     //Now put the CCS811's logic engine to sleep
