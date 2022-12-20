@@ -126,3 +126,153 @@ Faire fonctionner le capteur BMP280.
 Mise à jour du programme du CSS811 pour prise en compte des fonctions d'économies d'énergies.
 Souder et faire fonctionner les deux CSS811 en I2C.
 Report des objectifs de la séance précédente.
+
+_____________________________________________________________________________________________________________________________________
+Sixième entrée - 13.10.2022 - 16h36 - Sophia Antipolis
+
+
+## Objectif de la séance 
+Prise en main de la librairie SparkFun
+
+## Actions de la séance :
+
+Test des programmes d'exemples de la librairie Sparkfun et mise en place du squelette du programme principal.
+
+## Apprentissage de la séance
+
+Utilisation des fonctions de la librairie. Compréhensions de la fonction mode.
+
+
+## Objectif de la prochaine séance 
+
+Mise à jour du programme pour prise en compte des fonctions d'économies d'énergies
+
+
+_____________________________________________________________________________________________________________________________________
+Entrée 7 - 28.10.2022 - 16h36 - Sophia Antipolis
+
+
+## Objectif de la séance 
+
+Mise à jour du programme pour prise en compte des fonctions d'économies d'énergies
+
+## Actions de la séance :
+
+Redaction du code pour un seul capteur. Arrive à faire fonctionner un seul capteur avec le mode d'économie d'énergie.
+
+## Apprentissage de la séance
+
+Les adresses du capteurs et son fonctionnement. De plus, connaissance de la carte réceptrice notamment du pin Mesure
+
+
+## Objectif de la prochaine séance 
+
+Faire fonctionner deux capteurs CCS811 ensemble.
+
+_____________________________________________________________________________________________________________________________________
+Entrée 8 - 18.11.2022 - 16h36 - Sophia Antipolis
+
+
+## Objectif de la séance 
+Faire fonctionner deux capteurs CCS811 ensemble.
+
+## Actions de la séance :
+
+Soudure du second capteur en respectant le brochage. Petit soucis avec le matériel qui à causé une petite perte de temps (env 30min). Réflexion sur les méthodes de communication et comment les coder.
+
+## Apprentissage de la séance
+
+Compréhension des différentes adresses du capteurs et comment les changer. Compréhensio du squellete que devrait avoir le programme pour faire fonctionner
+le capteur.
+
+## Objectif de la prochaine séance 
+
+Faire fonctionner deux capteurs CCS811 ensemble.
+
+_____________________________________________________________________________________________________________________________________
+Entrée 9 - 25.11.2022 - 16h36 - Sophia Antipolis
+
+
+## Objectif de la séance 
+
+Faire fonctionner deux capteurs CCS811 ensemble.
+
+## Actions de la séance :
+
+Reprise du code pour le fonctionnement des deux capteurs. Fonctionnel !
+Soudage du troisième capteur CSS811.
+
+## Apprentissage de la séance
+
+Le fonctionnement du capteur, la communication I2C. L'excistence d'une blibliothéque faite par le fabricant regroupant toutes les fonctions que j'ai voulu coder. 
+
+
+## Objectif de la prochaine séance 
+
+Faire fonctionnner 3 capteurs.
+
+_____________________________________________________________________________________________________________________________________
+Entrée 10 - 01.12.2022 - 16h36 - Sophia Antipolis
+
+
+## Objectif de la séance 
+Faire fonctionnner 3 capteurs CCS811.
+
+## Actions de la séance :
+
+Ecriture du troisième code pour le fonctionnment des trois capteurs.
+Cepndant je rencontre une erreurs inabituelle : A fatal error occurred: MD5 of file does not match data in flash!
+
+Après quelques recherche, je trouve un moyen de la corriger en remettant l'ESP32 à ses valeurs d'usine avec la commande suivnate : 
+
+esptool --port <YOUR PORT> write_flash_status --non-volatile 0
+
+ soltuion trouvée sur ce site : https://community.m5stack.com/topic/838/a-fatal-error-occurred-md5-of-file-does-not-match-data-in-flash/5
+
+
+## Apprentissage de la séance
+
+Résolution de l'erreur évoqué ci dessus.
+
+
+## Objectif de la prochaine séance 
+ 
+Faire fonctionner les trois capteurs.
+
+_____________________________________________________________________________________________________________________________________
+Entrée 11 - 09.12.2022 - 16h36 - Sophia Antipolis
+
+
+## Objectif de la séance 
+
+Faire fonctionner les trois capteurs.
+
+## Actions de la séance :
+
+Mise à jour du code. Code fonctionnel pour les trois capteurs. Soummission de la réussite à M.PETER. Le nouvel objectif est désormais de stocker les données de la mesure dans un fichier pour ensuite le récupérer. Recherhce de solution d'écriture, de stockage et de transfert.
+
+## Apprentissage de la séance
+
+Méthode de stockage pour ESP32 et transfert des fichiers. Gestionnaire de fichier spécial pour ESP32.
+
+## Objectif de la prochaine séance 
+
+Ecrire un porgramme fonctionel de stockage des données récupérer par les capteurs. Réussir le trasnfert des données entre l'ESP32 et mon pc.
+
+_____________________________________________________________________________________________________________________________________
+Entrée 12 -  -  - Sophia Antipolis
+
+
+## Objectif de la séance 
+
+
+## Actions de la séance :
+
+
+
+## Apprentissage de la séance
+
+
+
+## Objectif de la prochaine séance 
+
