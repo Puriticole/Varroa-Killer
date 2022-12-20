@@ -68,3 +68,7 @@ Scéance 9 : 25-11
 Scéance 10 : 01-12
            -> J'arrive a faire tourner les ventilateurs mais pas encore à réguler leurs vitesse de rotaion. 
            -> J'ai commencé à réaliser le code Arduino qui nous permetra de controler les ventilateurs. 
+           
+Scéance 11 : 09-12
+           -> J'ai mis a jours le code permettant de reguler la vitesse des ventilateurs, le code fonctionne.
+           -> Un probleme est survenu au niveau de la carte d'adaptation ESP/ ventilateur 
