@@ -260,10 +260,11 @@ Méthode de stockage pour ESP32 et transfert des fichiers. Gestionnaire de fichi
 Ecrire un porgramme fonctionel de stockage des données récupérer par les capteurs. Réussir le trasnfert des données entre l'ESP32 et mon pc.
 
 _____________________________________________________________________________________________________________________________________
-Entrée 12 -  -  - Sophia Antipolis
+Entrée 12 - 20.12.2022 - 11h39 - Sophia Antipolis
 
 
 ## Objectif de la séance 
+
 
 
 ## Actions de la séance :
