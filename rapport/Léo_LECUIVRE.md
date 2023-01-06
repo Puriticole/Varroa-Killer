@@ -61,3 +61,21 @@ Séance n°7 : 28/10/2022
 - Echanges de données
 - Tentative d'envoi de fichiers 
 
+
+Séance n°8 : 10/10/2022
+
+
+
+
+9iéme seance 24/11/22 : On a des problemes pour la mise en application sur la carte Maxduino à travers l'IDE Arduino.
+
+10iéme seance 1/12/22 : On a reussi a faire fonctionner le maixduino à travers l'IDE Arduino. On essaye de faire fonctionner le WiFi de l'ESP32 pour pouvoir transmettre des données.
+
+11iéme seance 9/12/22 : Le WIFI de l'ESP32 ne fonctionne pas avec les librairies.
+
+12ième seance 20/12/22 : Suite au recherche du Mr Peter, le WiFi n'a pas utilité dans le projet, on va utiliser l'ecran LCD pour faire le comptage des varroas.
+
+
+
+
+
