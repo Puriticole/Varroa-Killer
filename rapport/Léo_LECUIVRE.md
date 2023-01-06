@@ -61,11 +61,11 @@ Séance n°7 : 28/10/2022
 - Echanges de données
 - Tentative d'envoi de fichiers 
 
+Séance n°8 : 18/11/2022
 
-Séance n°8 : 10/10/2022
-
-
-
+- Avec une aide sur le traitement des images sur Arduino/fonctionnement de l'ESP intégré 
+- Essais de l'ESP sur la carte Maixduino avec ces infos
+- Mise en place difficile à cause de plusieurs librairies inexistantes.
 
 9iéme seance 24/11/22 : On a des problemes pour la mise en application sur la carte Maxduino à travers l'IDE Arduino.
 
