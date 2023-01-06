@@ -67,15 +67,29 @@ Séance n°8 : 18/11/2022
 - Essais de l'ESP sur la carte Maixduino avec ces infos
 - Mise en place difficile à cause de plusieurs librairies inexistantes.
 
-9iéme seance 24/11/22 : On a des problemes pour la mise en application sur la carte Maxduino à travers l'IDE Arduino.
+Séance n°9 : 24/11/2022
 
-10iéme seance 1/12/22 : On a reussi a faire fonctionner le maixduino à travers l'IDE Arduino. On essaye de faire fonctionner le WiFi de l'ESP32 pour pouvoir transmettre des données.
+- Toujours des problèmes avec l'ESP intégré
+- Ajout des librairies manquantes
+- Le téléversement est possible mais l'ESP n'est pas reconnu "ESP Timeout"
 
-11iéme seance 9/12/22 : Le WIFI de l'ESP32 ne fonctionne pas avec les librairies.
+Séance n°10 : 1/12/2022
 
-12ième seance 20/12/22 : Suite au recherche du Mr Peter, le WiFi n'a pas utilité dans le projet, on va utiliser l'ecran LCD pour faire le comptage des varroas.
+- Prise de photo et stockage sur carte SD via IDE Arduino
+- ESP ne fonctionne toujours pas
+- Possible que le Firmware de la puce ne soit pas présent/à jour
 
+Séance n°11 : 1/12/2022
 
+- Tentative de mise à jour du firmware
+- Mise à jour impossible car ??
+- Apparement impossible d'utiliser l'ESP intégré à la carte
+
+Séance n°12 : 20/12/2022
+
+- Après recherche, Abandon de l'utilisation de l'ESP pour envoyer les données de comptage et les photos
+- Le process de comptage et l'affichage se fera en local 
+- Début du design de l'interface via le LCD
 
 
 
