@@ -91,5 +91,15 @@ Séance n°12 : 20/12/2022
 - Le process de comptage et l'affichage se fera en local 
 - Début du design de l'interface via le LCD
 
+Séance n°13 : 06/01/2023
+
+- Suite de la programmation du LCD
+- Test sur Maixduino impossible car la carte n'est pas là
+
+
+
+
+
+
 
 
