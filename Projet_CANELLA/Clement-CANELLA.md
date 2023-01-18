@@ -37,6 +37,7 @@ Séance 4 : Fin du cablage de la carte ESP32 avec FTDI USB to Serial Cable
            -> Nous arrivons a communiquer avec la ESP32
        
 Séance 5 :  03-10
+
            -> téléchargement des bibliothèques OneWire et DallasTemperature
            -> communication avec le capteur 18B20 (réception de la température)
            -> Nom du fichier : com18B20_03-10.ino
@@ -50,25 +51,41 @@ Scéance 6 : 13-10
            -> Le lien vers le ventilo choisi : https://fr.aliexpress.com/item/1005003284761769.html?spm=a2g0o.detail.1000014.11.8ab61ca2U5oJsV&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.14452.226710.0&scm_id=1007.14452.226710.0&scm-url=1007.14452.226710.0&pvid=3db608ed-b30f-4c5d-a034-b0428ab793c1&_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.14452.226710.0,pvid:3db608ed-b30f-4c5d-a034-b0428ab793c1,tpp_buckets:668%232846%238107%231934&pdp_ext_f=%7B%22sku_id%22%3A%2212000025019612448%22%2C%22sceneId%22%3A%2230050%22%7D&pdp_npi=2%40dis%21EUR%211.89%211.65%21%21%21%21%21%40211b442116656511210336684e0b5d%2112000025019612448%21rec&ad_pvid=202210130152010484380121356153317682_2
 
 Scéance 7 : 28-10
+
            -> J'ai recu le ventilateur qu'il faudra mettre en oeuvre à la prochaine scénance. 
            -> J'ai Connectée les pin des thermomètres sur la meme entrée de la carte et addapté le code en fonction. 
            -> Fonctionne bien mais a parfois des problèmes de téléversement. 
           
 Scéance 8 : 18-11
+
            -> J'ai placé tous les capteurs de températures sur une breadboard séparée de la carte esp32 et des boutons, ce qui simplifie la lisibilité du circuit. 
            -> J'ai pu tester le fonctionnement de 4 capteurs 18B20 sur la meme entrée de l'ESP32 ce qui à bien fonctionner. 
            -> J'ai soudé les différents composants de la carte de régulation des résistances thermiques et des ventilateurs. 
            -> Petite mise à jours au niveau du code. 
            
 Scéance 9 : 25-11
+
            -> J'ai finalisé les soudures de la carte permettant la régulation des résistances thermiques et des ventilateurs.
            -> J'ai ajouter au montage éléctrique la carte soudée ainsi qu'un ventilateur. 
            -> je me suis renseigné pour controler les ventilateurs via la carte ESP32 en pwm
            
 Scéance 10 : 01-12
+
            -> J'arrive a faire tourner les ventilateurs mais pas encore à réguler leurs vitesse de rotaion. 
            -> J'ai commencé à réaliser le code Arduino qui nous permetra de controler les ventilateurs. 
            
 Scéance 11 : 09-12
+
            -> J'ai mis a jours le code permettant de reguler la vitesse des ventilateurs, le code fonctionne.
            -> Un probleme est survenu au niveau de la carte d'adaptation ESP/ ventilateur 
+           
+Scéance 12 : 20-12 
+
+           -> J'ai commencé à souder les ventilateurs sur le toit de la ruche
+           -> La modulation de la vitesse des ventilateurs fonctionne
+           -> Une des prochaines étapes est d'asservir la vitesse des ventilateurs avec la température de la ruche.
+           
+Scénace 13 : 06-01
+
+           -> J'ai fini de souder les ventillateurs ainsi que les résistances thermiques 
+           -> IL me reste à rendre entièrement fonctionnel le code permettant l'asservissement de la température de la ruche
