@@ -59,7 +59,8 @@ Scéance 7 : 28-10
 Scéance 8 : 18-11
 
            -> J'ai placé tous les capteurs de températures sur une breadboard séparée de la carte esp32 et des boutons, ce qui simplifie la lisibilité du circuit. 
-           -> J'ai pu tester le fonctionnement de 4 capteurs 18B20 sur la meme entrée de l'ESP32 ce qui à bien fonctionner. 
+           -> J'ai pu tester le fonctionnement de 4 capteurs 18B20 sur la meme entrée de l'ESP32 ce qui à bien fonctionner.
+           -> Je suis passé sur 
            -> J'ai soudé les différents composants de la carte de régulation des résistances thermiques et des ventilateurs. 
            -> Petite mise à jours au niveau du code. 
            
