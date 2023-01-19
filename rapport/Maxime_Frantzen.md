@@ -234,7 +234,6 @@ esptool --port <YOUR PORT> write_flash_status --non-volatile 0
 
 Résolution de l'erreur évoqué ci dessus.
 
-
 ## Objectif de la prochaine séance 
  
 Faire fonctionner les trois capteurs.
@@ -265,15 +264,43 @@ Entrée 12 - 20.12.2022 - 11h39 - Sophia Antipolis
 
 ## Objectif de la séance 
 
+Rechercher des solutions pour transfert des données de mesures et mise en applications.
+
+## Actions de la séance :
+
+Première piste dans la communication sans fils. 
+ - Bluetooth
+ - Wifi privé généré par l'ESP
+Plusieurs points bloquants viennent entraver l'avancée : 
+ - Difficulté de stockage sur la mémoire de l'ESP
+ - Difficulté de transmission d'un fichier au format CSV.
+
+Seconde piste suite à une idée d'Ugo Martino : Utilisation d'une carte µSD.
+
+## Apprentissage de la séance
+
+Fonctionnement de la communication WIFI de l'ESP et capacité de génération d'un réseau Bluetooth.
+
+## Objectif de la prochaine séance 
+
+Rédaction d'un programme capable d'écrire sur la µSD.
+ 
+ _____________________________________________________________________________________________________________________________________
+Entrée 13 - 06.01.2023 -  - Toulon
+
+
+## Arrêt maladie
+
+_____________________________________________________________________________________________________________________________________
+Entrée 14 - 19.01.2023 - 16h43 - Sophia Antipolis
+
+
+## Objectif de la séance 
 
 
 ## Actions de la séance :
 
-
-
 ## Apprentissage de la séance
-
-
 
 ## Objectif de la prochaine séance 
 
