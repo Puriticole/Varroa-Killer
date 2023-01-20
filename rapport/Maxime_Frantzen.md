@@ -266,7 +266,7 @@ Entrée 12 - 20.12.2022 - 11h39 - Sophia Antipolis
 
 Rechercher des solutions pour transfert des données de mesures et mise en applications.
 
-## Actions de la séance :
+## Actions de la séance 
 
 Première piste dans la communication sans fils. 
  - Bluetooth
@@ -294,13 +294,20 @@ Entrée 13 - 06.01.2023 -  - Toulon
 _____________________________________________________________________________________________________________________________________
 Entrée 14 - 19.01.2023 - 16h43 - Sophia Antipolis
 
-
 ## Objectif de la séance 
 
+Rédaction d'un programme capable d'écrire sur la µSD.
 
-## Actions de la séance :
+## Actions de la séance 
+ 
+Rédaction d'un programme capable d'écrire sur la µSD. Non testé car pas de carte µSD. Vérification matérielle de la compatibilité du matériel fourni par le professeur.
+ 
+Présentation du projet auprès des camarades de classe.
 
 ## Apprentissage de la séance
+ 
+ Fonctionnement de l'object FILE et SD. 
 
 ## Objectif de la prochaine séance 
 
+Test de la carte SD et si possible test d'intégration dans la ruche.
