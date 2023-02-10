@@ -51,4 +51,10 @@ Cahier de suivi :
   Suite au recherche du Mr Peter, le WiFi n'a pas utilité dans le projet, on va utiliser l'ecran LCD pour faire le comptage des varroas.
 
 - 13iéme seance 06/01/23 :
-  Impossible de travailler car pas de materiel. Aide 
+  Pas de carte aujourd'hui. Travail avec Clement Canella pour réaliser les soudures des resistances et ventilateurs
+  
+- 14iéme seance 19/01/23 :
+  Travail sur le LCD pour réaliser l'affichage du comptage des varroas.
+  
+- 15iéme seance 10/02/23 :
+  
