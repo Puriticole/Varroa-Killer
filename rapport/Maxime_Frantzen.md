@@ -311,3 +311,36 @@ Présentation du projet auprès des camarades de classe.
 ## Objectif de la prochaine séance 
 
 Test de la carte SD et si possible test d'intégration dans la ruche.
+ 
+ _____________________________________________________________________________________________________________________________________
+Entrée 15 - 11.02.2023 - 16h43 - Sophia Antipolis
+
+## Objectif de la séance 
+Test de la carte SD et si possible test d'intégration dans la ruche.
+ 
+## Actions de la séance 
+ 
+Test du programme. Problème avec l'utilisation du protocole SPI. Mauvaise utilisation de la librarie. Une fois le problème résolu, le programme ne fonctionne toujours pas. Conflit entre deux versions de libraires. (LittleFS & ESP32)
+
+## Apprentissage de la séance
+ 
+ Fonctionnement de l'object SPI & LittleFS
+
+## Objectif de la prochaine séance 
+
+Trouver le conflit de librairie et le résoudre.
+ 
+ _____________________________________________________________________________________________________________________________________
+Entrée 16 - 17.02.2023 - 16h43 - Sophia Antipolis
+
+## Objectif de la séance 
+
+ Trouver le conflit de librairie et le résoudre.
+
+## Actions de la séance 
+ 
+ 
+## Apprentissage de la séance
+
+
+## Objectif de la prochaine séance 
