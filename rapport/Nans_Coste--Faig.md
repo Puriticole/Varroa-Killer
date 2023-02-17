@@ -57,4 +57,7 @@ Cahier de suivi :
   Travail sur le LCD pour réaliser l'affichage du comptage des varroas.
   
 - 15iéme seance 10/02/23 :
-  
+  Aprés plusieurs recheches, nous avons trouvé une autre carte permettant de faire du traitement d'image avec un IA interne
+
+- 16iémé seance 17/02/23 :
+  La carte est recu apres plusieurs tests, elles fonctionnement parfaitement. On utlise une carte ESP32 afin de pouvoir la commander à l'aide d'un code implementer dans l'ESP32.
