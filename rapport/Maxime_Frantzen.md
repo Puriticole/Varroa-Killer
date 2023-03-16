@@ -344,3 +344,25 @@ Entrée 16 - 17.02.2023 - 16h43 - Sophia Antipolis
 
 
 ## Objectif de la prochaine séance 
+ 
+  _____________________________________________________________________________________________________________________________________
+Entrée 17 - 16.03.2023 - 16h43 - Sophia Antipolis
+
+## Objectif de la séance 
+
+Faire fonctionner l'écriture sur la carte SD.
+
+## Actions de la séance 
+ 
+Reprise des programme pour se remttre "dans le bain". Mesure sur les pins d'alimentation. Problèmes sur les tensions d'alimentation sur la carte. La carte de transfert n'est cependant pas incriminée. Le régulateur sur la carte portant l'esp32 ne sort pas un 3.3V propre.
+ 
+Rajout d'un bornier d'alimentation sur la carte porteurse de l'esp32. Une fois la batterie connectée directement la dite carte, tout fonctionne parfaitement.
+ 
+## Apprentissage de la séance
+
+Communication avec µSD : OK.
+Ecriture sur µSD : NON OK
+
+## Objectif de la prochaine séance 
+ 
+Ecriture sur µSD.
