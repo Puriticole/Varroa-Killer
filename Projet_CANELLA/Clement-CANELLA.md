@@ -90,3 +90,7 @@ Scénace 13 : 06-01
 
            -> J'ai fini de souder les ventillateurs ainsi que les résistances thermiques 
            -> IL me reste à rendre entièrement fonctionnel le code permettant l'asservissement de la température de la ruche
+           
+           
+16-03 : 
+           -> J'ai relié la carte ESP aux thermomètres, pour le moment je n'arrive pas à lire les température 
