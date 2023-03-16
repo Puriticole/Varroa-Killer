@@ -61,3 +61,6 @@ Cahier de suivi :
 
 - 16iémé seance 17/02/23 :
   La carte est recu apres plusieurs tests, elles fonctionnement parfaitement. On utlise une carte ESP32 afin de pouvoir la commander à l'aide d'un code implementer dans l'ESP32.
+- 17iéme seance 16/03/23 :
+  On a reussit à communiquer entre la carte HuskyLens et un ESP32. Les donnes remontent la precense ou non d'un objet reconnue.
+  
