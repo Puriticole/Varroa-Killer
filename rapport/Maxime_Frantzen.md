@@ -376,11 +376,15 @@ Faire fonctionner l'écriture sur la carte SD.
 
 ## Actions de la séance 
  
+ Test de l'exemple sd arduino : ok.
+ Ecriture la carte sd : ok.
+ Intégration d'un capteur dans la mesure pour écriture : en cours.
  
 ## Apprentissage de la séance
 
-
+ Porblème de conversion entre les fonctions de retours des capteurs et fonction d'écriture sur la SD.
+ Plus de retour du capteur -> Surement mauvais capteur sélectionné, a prendre en compte sur la prochaine séance.
 
 ## Objectif de la prochaine séance 
  
-
+Faire fonctionnement la mesure et l'écriture combinée sur la SD 
