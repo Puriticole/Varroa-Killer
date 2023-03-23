@@ -366,3 +366,21 @@ Ecriture sur µSD : NON OK
 ## Objectif de la prochaine séance 
  
 Ecriture sur µSD.
+
+   _____________________________________________________________________________________________________________________________________
+Entrée 18 - 23.03.2023 - 16h43 - Sophia Antipolis
+
+## Objectif de la séance 
+
+Faire fonctionner l'écriture sur la carte SD.
+
+## Actions de la séance 
+ 
+ 
+## Apprentissage de la séance
+
+
+
+## Objectif de la prochaine séance 
+ 
+
