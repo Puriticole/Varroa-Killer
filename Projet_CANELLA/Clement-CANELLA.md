@@ -94,3 +94,6 @@ Scénace 13 : 06-01
            
 16-03 : 
            -> J'ai relié la carte ESP aux thermomètres, pour le moment je n'arrive pas à lire les température 
+
+23-03 : 
+           -> J'ai essayé de résoudre le probleme de température sans succés pour le moment. Je suis repassé sur la détection d'un seul capteur 
