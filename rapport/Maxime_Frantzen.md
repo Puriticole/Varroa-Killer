@@ -388,3 +388,19 @@ Faire fonctionner l'écriture sur la carte SD.
 ## Objectif de la prochaine séance 
  
 Faire fonctionnement la mesure et l'écriture combinée sur la SD 
+
+ 
+    _____________________________________________________________________________________________________________________________________
+Entrée 18 - 23.03.2023 - 16h43 - Sophia Antipolis
+
+## Objectif de la séance 
+
+
+## Actions de la séance 
+
+ 
+## Apprentissage de la séance
+
+ 
+## Objectif de la prochaine séance 
+ 
