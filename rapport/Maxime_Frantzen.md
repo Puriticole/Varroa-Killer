@@ -391,7 +391,7 @@ Faire fonctionnement la mesure et l'écriture combinée sur la SD
 
  
     _____________________________________________________________________________________________________________________________________
-Entrée 19 - 23.03.2023 - 16h43 - Sophia Antipolis
+Entrée 19 - 28.03.2023 - 16h43 - Sophia Antipolis
 
 ## Objectif de la séance 
 
