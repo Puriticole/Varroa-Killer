@@ -97,3 +97,6 @@ Scénace 13 : 06-01
 
 23-03 : 
            -> J'ai essayé de résoudre le probleme de température sans succés pour le moment. Je suis repassé sur la détection d'un seul capteur 
+28-03 :
+           -> J'ai reussi à résoudre le probleme de lecture des thermomètres. 
+           -> Je commence à connecter les ventilateurs ainsi que les résistances thermiques.
