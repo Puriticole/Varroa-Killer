@@ -399,7 +399,11 @@ Faire fonctionner la mesure et l'écriture combinée sur la SD
  
 ## Actions de la séance 
 
-
+Lecture des trois capteurs et prise de leurs mesures sur .csv sur SD : ok.
+Reflexion pour optimisation du confort de la mesure : ok. 
+Mesure et stockage du taux de particule fine .csv : ok.
+Mise en place d'un bouton pour arréter le code : en cours -> Non testé.
+Recherche d'un dispositif pour différencier les mesures : En cours.
  
 ## Apprentissage de la séance
 
@@ -407,3 +411,4 @@ Problème rencontré : lors du téléversement d'un projet, impossibilité de co
  
 ## Objectif de la prochaine séance 
  
+ Mise en place d'un test de libérarion de CO2 avec mesure.
