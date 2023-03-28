@@ -395,12 +395,15 @@ Entrée 19 - 28.03.2023 - 16h43 - Sophia Antipolis
 
 ## Objectif de la séance 
 
-
+Faire fonctionner la mesure et l'écriture combinée sur la SD 
+ 
 ## Actions de la séance 
+
 
  
 ## Apprentissage de la séance
 
+Problème rencontré : lors du téléversement d'un projet, impossibilité de communiquer avec la carte. Essayé de rebnot la carte, même erreur. En enlevant la carte SD, possibilité. Je suppose que le SD générait un bruit sur la communication série qui bloquait la com. Problème résolu.
  
 ## Objectif de la prochaine séance 
  
