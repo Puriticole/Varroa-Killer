@@ -24,7 +24,7 @@ Cahier de suivi :
   
 - 4iéme seance 15/09/22 :
   Recherche documentation pour realiser la detection des varroas garce au image de la camera. 
-  Problematique : Pour tous ce qui est du traitement d'image par le module Maixduino, le configuration ce fait uniquement par du python et non grace à l'IDE arduino.
+  Problematique : Pour tous ce qui est du traitement d'image par le module Maixduino, le configuration ce fait uniquement par du python et non grace à l'IDE   arduino.
   
 - 5ième seance 3/10/22 :
   On a commencé à programmer en Python afin de réaliser une detection sur image.
@@ -69,7 +69,8 @@ Cahier de suivi :
   On travail sur la detection de plusieurs objets en meme temps avec la carte Huskylens.
   
 - 19iéme seance 28/03/23 :
+  Tentative de reconnaissance de plusieurs objets differents avec huskylens en un ESP32.
 
 - 20iéme seance 06/04/23 :
-  Modification de l'illustration 3D de la ruche.
+  Recolte chute d'une ruche avec plusiseurs varroas. Modification de l'illustration 3D de la ruche.
   
