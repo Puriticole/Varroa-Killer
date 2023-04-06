@@ -69,5 +69,7 @@ Cahier de suivi :
   On travail sur la detection de plusieurs objets en meme temps avec la carte Huskylens.
   
 - 19iéme seance 28/03/23 :
-  
+
+- 20iéme seance 06/04/23 :
+  Modification de l'illustration 3D de la ruche.
   
