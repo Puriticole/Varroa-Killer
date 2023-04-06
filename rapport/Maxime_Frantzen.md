@@ -432,11 +432,17 @@ Mise en place d'un bouton pour arréter le code : en cours : ok.
 Recherche d'un dispositif pour différencier les mesures : Reporté pour priorisé la mesure.
  
 Reorganisation du csv pour mesure.
+
+3 fichiers sont générés, un pour chaque capteurs.
+ 
+Test avec trois cartouche de CO2 : ok.
+Traitement des données : en cours. 
  
 ## Apprentissage de la séance
 
+RAS
 
 ## Objectif de la prochaine séance 
  
- 
+Refaire le test pour avoir plus de données avec un système qui concentre plus le CO2.
 
