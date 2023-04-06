@@ -45,7 +45,7 @@
  * Mode 3 = 60s
  * Mode 4 = 250ms
  */
-#define MODE_ALL_CCS 1
+#define MODE_ALL_CCS 2
 
 CCS811 U5(CCS811_ADDR_H);
 CCS811 U4(CCS811_ADDR_H);
@@ -160,6 +160,7 @@ void readFile(fs::FS &fs, const char * path){
 }
 
 
+
 void setup() {
 
     //Increment boot number and print it every reboot
@@ -234,7 +235,7 @@ void setup() {
   Serial.print("Interrupt configuation exited with: ");
   Serial.println(U3.statusString(returnCode_1));
 
-  delay(100);
+  delay(500);
   digitalWrite(PIN_NOT_WAKE_1, 1); //Sleep
 
 
@@ -266,7 +267,7 @@ void setup() {
 
 
   //Delay qui sera repercuté entre les deux mesures
-  delay(100);
+  delay(500);
 
   digitalWrite(PIN_NOT_WAKE_2, 1); //Sleep
   
@@ -296,7 +297,7 @@ void setup() {
   Serial.print("Interrupt configuation exited with: ");
   Serial.println(U5.statusString(returnCode_3));
 
-  delay(100);
+  delay(500);
   digitalWrite(PIN_NOT_WAKE_3, 1); //Sleep
 
   //Saut de line pour faciliter la lecture
@@ -310,24 +311,61 @@ void setup() {
 //
 //  nom_fichier = nom_fichier + itoa(bootCount, cstr, 10);
 
-    createFile(SD, "/mesure1.csv");
+    createFile(SD, "/mesure_capteur1.csv");
 
-    appendFile(SD, "/mesure1.csv", "Temps (s)");
-    appendComma(SD, "/mesure1.csv");
-    appendFile(SD, "/mesure1.csv", "CO2 U3");
-    appendComma(SD, "/mesure1.csv");
-    appendFile(SD, "/mesure1.csv", "TVOC U3");
-    appendComma(SD, "/mesure1.csv");
-    appendFile(SD, "/mesure1.csv", "CO2 U4");
-    appendComma(SD, "/mesure1.csv");
-    appendFile(SD, "/mesure1.csv", "TVOC U4");
-    appendComma(SD, "/mesure1.csv");
-    appendFile(SD, "/mesure1.csv", "CO2 U5");
-    appendComma(SD, "/mesure1.csv");
-    appendFile(SD, "/mesure1.csv", "TVOC U5");
-    appendFile(SD, "/mesure1.csv", "\n");
+    appendFile(SD, "/mesure_capteur1.csv", "Temps (s)");
+    appendComma(SD, "/mesure_capteur1.csv");
+    appendFile(SD, "/mesure_capteur1.csv", "CO2 U3");
+    appendComma(SD, "/mesure_capteur1.csv");
+    appendFile(SD, "/mesure_capteur1.csv", "TVOC U3");
+    appendComma(SD, "/mesure_capteur1.csv");
+    appendFile(SD, "/mesure_capteur1.csv", "CO2 U4");
+    appendComma(SD, "/mesure_capteur1.csv");
+    appendFile(SD, "/mesure_capteur1.csv", "TVOC U4");
+    appendComma(SD, "/mesure_capteur1.csv");
+    appendFile(SD, "/mesure_capteur1.csv", "CO2 U5");
+    appendComma(SD, "/mesure_capteur1.csv");
+    appendFile(SD, "/mesure_capteur1.csv", "TVOC U5");
+    appendFile(SD, "/mesure_capteur1.csv", "\n");
 
-    readFile(SD, "/mesure1.csv");
+    createFile(SD, "/mesure_capteur2.csv");
+
+
+    appendFile(SD, "/mesure_capteur2.csv", "Temps (s)");
+    appendComma(SD, "/mesure_capteur2.csv");
+    appendFile(SD, "/mesure_capteur2.csv", "CO2 U3");
+    appendComma(SD, "/mesure_capteur2.csv");
+    appendFile(SD, "/mesure_capteur2.csv", "TVOC U3");
+    appendComma(SD, "/mesure_capteur2.csv");
+    appendFile(SD, "/mesure_capteur2.csv", "CO2 U4");
+    appendComma(SD, "/mesure_capteur2.csv");
+    appendFile(SD, "/mesure_capteur2.csv", "TVOC U4");
+    appendComma(SD, "/mesure_capteur2.csv");
+    appendFile(SD, "/mesure_capteur2.csv", "CO2 U5");
+    appendComma(SD, "/mesure_capteur2.csv");
+    appendFile(SD, "/mesure_capteur2.csv", "TVOC U5");
+    appendFile(SD, "/mesure_capteur2.csv", "\n");
+
+
+    createFile(SD, "/mesure_capteur3.csv");
+
+    appendFile(SD, "/mesure_capteur3.csv", "Temps (s)");
+    appendComma(SD, "/mesure_capteur3.csv");
+    appendFile(SD, "/mesure_capteur3.csv", "CO2 U3");
+    appendComma(SD, "/mesure_capteur3.csv");
+    appendFile(SD, "/mesure_capteur3.csv", "TVOC U3");
+    appendComma(SD, "/mesure_capteur3.csv");
+    appendFile(SD, "/mesure_capteur3.csv", "CO2 U4");
+    appendComma(SD, "/mesure_capteur3.csv");
+    appendFile(SD, "/mesure_capteur3.csv", "TVOC U4");
+    appendComma(SD, "/mesure_capteur3.csv");
+    appendFile(SD, "/mesure_capteur3.csv", "CO2 U5");
+    appendComma(SD, "/mesure_capteur3.csv");
+    appendFile(SD, "/mesure_capteur3.csv", "TVOC U5");
+    appendFile(SD, "/mesure_capteur3.csv", "\n");
+
+
+    
     Serial.println();
 
 }
@@ -336,8 +374,9 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-
-Serial.println("###### DEBUT DE LA MESURE ######");
+  if(!stoppen_mesure){
+    Serial.println("###### DEBUT DE LA MESURE ######");
+  }
 
   while(!stoppen_mesure){
 
@@ -366,12 +405,13 @@ Serial.println("###### DEBUT DE LA MESURE ######");
     int TVOC = U3.getTVOC();
     char cstr[16];
      
-    appendFile(SD, "/mesure1.csv", itoa(temps, cstr, 10));
-    appendComma(SD, "/mesure1.csv");
-    appendFile(SD, "/mesure1.csv", itoa(co2, cstr, 10));
-    appendComma(SD, "/mesure1.csv");
-    appendFile(SD, "/mesure1.csv", itoa(TVOC, cstr, 10));
-    appendComma(SD, "/mesure1.csv");
+    appendFile(SD, "/mesure_capteur1.csv", itoa(temps, cstr, 10));
+    appendComma(SD, "/mesure_capteur1.csv");
+    appendFile(SD, "/mesure_capteur1.csv", itoa(co2, cstr, 10));
+    appendComma(SD, "/mesure_capteur1.csv");
+    appendFile(SD, "/mesure_capteur1.csv", itoa(TVOC, cstr, 10));
+    appendComma(SD, "/mesure_capteur1.csv");
+    appendFile(SD, "/mesure_capteur1.csv", "\n");
 
     //Now put the CCS811's logic engine to sleep
     digitalWrite(PIN_NOT_WAKE_1, 1);
@@ -404,10 +444,16 @@ Serial.println("###### DEBUT DE LA MESURE ######");
     int TVOC = U4.getTVOC();
     char cstr[16];
 
-    appendFile(SD, "/mesure1.csv", itoa(co2, cstr, 10));
-    appendComma(SD, "/mesure1.csv");
-    appendFile(SD, "/mesure1.csv", itoa(TVOC, cstr, 10));
-    appendComma(SD, "/mesure1.csv");
+    appendFile(SD, "/mesure_capteur2.csv", itoa(temps, cstr, 10));
+    appendComma(SD, "/mesure_capteur2.csv"); //Espace pour concatanation
+    appendComma(SD, "/mesure_capteur2.csv");
+    appendComma(SD, "/mesure_capteur2.csv");
+    appendFile(SD, "/mesure_capteur2.csv", itoa(co2, cstr, 10));
+    appendComma(SD, "/mesure_capteur2.csv");
+    appendFile(SD, "/mesure_capteur2.csv", itoa(TVOC, cstr, 10));
+    appendComma(SD, "/mesure_capteur2.csv");
+    appendFile(SD, "/mesure_capteur2.csv", "\n");
+
 
     //Now put the CCS811's logic engine to sleep
     digitalWrite(PIN_NOT_WAKE_2, 1);
@@ -443,11 +489,18 @@ Serial.println("###### DEBUT DE LA MESURE ######");
     int TVOC = U5.getTVOC();
     char cstr[16];
 
-    appendFile(SD, "/mesure1.csv", itoa(co2, cstr, 10));
-    appendComma(SD, "/mesure1.csv");
-    appendFile(SD, "/mesure1.csv", itoa(TVOC, cstr, 10));
-    appendComma(SD, "/mesure1.csv");
-    appendFile(SD, "/mesure1.csv", "\n");
+    appendFile(SD, "/mesure_capteur3.csv", itoa(temps, cstr, 10));
+    appendComma(SD, "/mesure_capteur3.csv"); //Espace pour concatanation
+    appendComma(SD, "/mesure_capteur3.csv");
+    appendComma(SD, "/mesure_capteur3.csv");
+    appendComma(SD, "/mesure_capteur3.csv");
+    appendComma(SD, "/mesure_capteur3.csv");
+    appendFile(SD, "/mesure_capteur3.csv", itoa(co2, cstr, 10));
+    appendComma(SD, "/mesure_capteur3.csv");
+    appendFile(SD, "/mesure_capteur3.csv", itoa(TVOC, cstr, 10));
+    appendComma(SD, "/mesure_capteur3.csv");
+    appendFile(SD, "/mesure_capteur3.csv", "\n");
+
 
     //Now put the CCS811's logic engine to sleep
     digitalWrite(PIN_NOT_WAKE_3, 1);
