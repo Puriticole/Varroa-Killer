@@ -107,3 +107,9 @@ Séance 06-04 :
 
            -> J'ai souder les ventilateurs à la carte. 
            -> Il y a un court circuit que j'ai localisé et que je tente de résoudre. 
+
+Séance 20-04 :
+
+           -> J'ai trouvé d'ou venait le problème de court circuit, les ventilateurs une fois alimenté tournent sans problème, leur vitesse est variable. 
+           -> J'ai rencontré un problème en fin de séances sur mes test pour faire varier la vitesse de rotation des ventilateurs en fonction de la température. 
+           L'ESP à été définitivement endomagé, il faudra procéder à un échange. 
