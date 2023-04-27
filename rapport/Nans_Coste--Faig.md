@@ -1,7 +1,7 @@
 Objectif du groupe :
 Réalisation d'un système permettant le traitement et l'analyse pour l'extermination du parasite "le Varroa" à l'interieur d'une ruche.
 Nous avons divisé notre groupe en 2 binomes : Clement et Maxime s'occupe du devellopement d'un systeme d'extermination par température ou utilisation de CO2.
-                                              Léo et Nans s'occupe d'un système de comptage des Varroas mort afin de comparer le fonctionnement du systeme d'extermination.
+                                              Léo et Nans s'occupe d'un système de comptage des Varroas mort afin de comparer le fonctionnement des systemes d'extermination.
 
 Objectif du bimone :
 - Etude et réalisation d'un systeme de tapis roulant installé sous une ruche. Il permettrait de recuperer tous ce qui tomberait à travers les grilles du fond de la ruche. En sortie de celui-ci une camera permettrait d'analyser ce qui se trouve sur le tapis afin de compter le nombre de varroa mort et ainsi valider quelle méthode d'extermination fonctionne le mieux.
@@ -9,13 +9,13 @@ Objectif du bimone :
 Cahier de suivi :
 
 - 1er seance 1/09/22 :
-  Presentation et choix des projets
-  Prise en main du logiciel github
-  Premieres recherches documentaires
+  Presentation et choix des projets.
+  Prise en main du logiciel github.
+  Premieres recherches documentaires.
   Travail en binome avec Leo sur la partie motorisation du tapis roulant ainsi que de l'analyse de image par une camera.
 
 - 2iéme seance 2/09/22 :
-  Visite des ruches
+  Visite des ruches.
   Decouverte et test de la carte Maixduino. Dans un premier temps, nous disposons de cette carte pour commencer notre travail. Elle integre une camera ainsi qu'un ecran LCD.
 
 - 3iéme seance 9/09/22 :
@@ -27,7 +27,7 @@ Cahier de suivi :
   Problematique : Pour tous ce qui est du traitement d'image par le module Maixduino, le configuration ce fait uniquement par du python et non grace à l'IDE   arduino.
   
 - 5ième seance 3/10/22 :
-  On a commencé à programmer en Python afin de réaliser une detection sur image sur le PC.
+  On a commencé à programmer en Python afin de réaliser une detection sur image sur un PC.
   
 - 6ième seance 13/10/22 :
   Avancement sur la réalisation du plan 3d de la ruche ainsi que du rajout pour la systeme de recuperation des varroas morts
@@ -76,4 +76,7 @@ Cahier de suivi :
   
 - 21iéme seance 20/04/23 :
   On se rends compte que les caméras presentent sur les cartes ont une resolution bien trop faible pour detecter des varroas. Entre la couleur et la taille, il est trés compliqué de faire une distinction.
+  
+- 22iéme seance 27/04/23 : 
+  Présentation des projets.
   
