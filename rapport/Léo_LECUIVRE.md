@@ -96,9 +96,54 @@ Séance n°13 : 06/01/2023
 - Suite de la programmation du LCD
 - Test sur Maixduino impossible car la carte n'est pas là
 
+Séance n°14 : 19/01/2023
 
+- Suite de la programmation du LCD pour affichage du resultat du comptage
+- Developpement et mise au point d'un comptage, par rapport à la taille et la couleur (en python)
+- Mise en place d'un treshold pour la marge d'erreur
 
+Séance n°15 : 10/02/2023
 
+- Le code de comptage sous python et maixduino est fonctionnel mais la précision n'est pas optimale.
+- Le maixduino etant arreté dans son developpement, les evolutions ne seront pas possibles
+- Decouverte d'une autre carte "Huskylens" permettant le traitement d'image, avec une IA apprenante sur des photos.
+- Le traitement de cette carte se fait en live, ce qui permetterait donc une utilisation autonome du compteur dans la ruche (pas de necessité d'avoir un pc)
+
+Séance n°16 : 17/02/2023
+
+- Mise de coté de la carte maixduino
+- Réception et decouverte de huskylens
+- outil puissant permettant la detection d'objects (visage, ...) le tracking par apprentissage, la detection de couleurs ...
+- A première vue la précision sera un frein
+
+Séance n°17 : 16/03/2023
+
+- Ajout d'une carte Heltech, pour communiquer avec huskylens en série
+- Le code renvoie la présence de blocks ou de fleches qui apparaissent sur l'ecran
+
+Séance n°18 : 23/03/2023
+
+- Travail sur la detection d'objects avec huskylens 
+- Gestion des treshold et min max de detection pour affiner la recherche
+- L'apprentissage d'object pour le suivi est possible mais un seul block ne peut etre affiché
+
+Séance n°19 : 28/03/2023
+
+- Mise en place d'un comptage qui prend en compte la couleur, la position
+- Tentative de mise en place d'une calibration
+
+Séance n°20 : 06/04/2023
+
+- Récolte des retombées dans la ruche pour observer à l'oeil nu les varroas
+- On s'est rendu compte qu'une detection aussi prècise ne sera pas possible avec la caméra actuelle
+- Essai avec la caméra grand angle, mais l'a précision n'est pas meilleure voire pire
+
+Séance n°21 : 20/04/2023
+
+- Mise au point du code de comptage avec la précision la plus grande possible
+- Ajout d'un effet visuel lors de la detection, d'un bouton reset du comptage
+- Le comptage se fait en local, l'affichage aussi 
+- Tentative d'exportation du resultat du comptage dans un fichier txt sur carte SD
 
 
 
