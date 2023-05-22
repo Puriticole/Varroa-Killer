@@ -1,7 +1,7 @@
 _________________________________________________________________________________________________________
 Première entrée - 01.09.2022 - 11h22 
  
-## Sélection du projet d'extermination de varroa.
+## Sélection du projet du traitement de varroa.
 ### Division de l'équipe en deux binome:
 - Coste--Faig & LeCuivre : Comptage des varroas avec une caméra et gestion de l'évacuation des cadavres avec un tapis roulant.
 - Canella & Frantzen : Régulation de l'injection de CO2 & de la température dans la ruche dans le but d'exterminer les varroa.
@@ -31,17 +31,17 @@ ________________________________________________________________________________
 Seconde entrée - 02.09.2022 - 17h45 - Sophia Antipolis - Polytech
 
 ## Définition des des objectifs de la séance 
- Faire fonctionner le capteur pour la mise en place d'une expérimentation sur une séance prochaine en réalistite.
+ Faire fonctionner le capteur pour la mise en place d'une expérimentation sur une séance prochaine.
 
  Action de la séance :
  - Installation de toute les libraires et modules nécéssaires au bon fonctionnnement de l'esp32 et du capteur de CO2 CCS811 ;
  - Tentative de mise en route du capteur ;
- - Recherhce dans la librairue du capteur le bon contructeur afin de changer les pins de connections.
+ - Recherhce dans la librairie du capteur du bon contructeur afin de changer les pins de connections.
    - Si impossible, je rechercherais une autre librairie.
  - Visite du rucher de Polytech.
 
 Objectif de la prochaine séance : Faire fonctionner le capteur CCS811. Une fois fait, rajouter les deux autres capteurs et faire fonctionner le bus.
-L'objectif est que dans deux séances, nous puissions mettre en place une expérimentation par rapport à la diffusion du CO2 dans la ruche.
+L'objectif : dans deux séances, mettre en place une expérimentation testant la diffusion du CO2 dans la ruche.
 
 
 _____________________________________________________________________________________________________________________________
@@ -60,7 +60,7 @@ De plus, j'ai rencontrés plusieurs difficultés sur la mise en oeuvre du capteu
    - Problème de stabilité en alimentation de la carte. J'ai remarqué plusieurs faux contact qui sont reliés à la position de la carte. Si la carte viens à bouger quelque peu, il peu avoir des problèmes d'alimentation ou de communication série. De plus, le port USB de mon ordinateur ne fournie qu'une tension de 2.7V au système. Ce qui n'atteint pas la tension nominale préconisée par la datasheet.
 
 ## Apprentissage de la séance 
-J'ai pu comprendre une petite partie des mécanisme de l'ESP32. De plus, afin de régler le problème de stabilité en tension, j'ai pu tester d'alimenter la carte avec une alimentation stabilisé en 3.3V.
+J'ai pu comprendre une petite partie des mécanismes de l'ESP32. De plus, afin de régler le problème de stabilité en tension, j'ai pu tester d'alimenter la carte avec une alimentation stabilisé en 3.3V.
 
 ## Objectif de la prochaine séance 
 Soudure du capteurs de CO2 supplémentaire.
@@ -113,7 +113,7 @@ Cause : Manque d'information sur l'existence de la libraire SparkFunCSS8111.
 
 ## Actions de la séance :
 
-Lecture de la datasheet du capteur et questionnement sur la communication I2C et l'accession des registres du capteurs. Repérages des registres et des bits nécessaire à la réalisation des objectifs demandés. Ecriture d'un programmme béta.
+Lecture de la datasheet du capteur et questionnement sur la communication I2C et l'accés aux registres du capteurs. Repérages des registres d'intérêts et des bits nécessaire à la réalisation des objectifs demandés. Ecriture d'un programmme béta.
 
 ## Apprentissage de la séance
 
@@ -178,11 +178,11 @@ Faire fonctionner deux capteurs CCS811 ensemble.
 
 ## Actions de la séance :
 
-Soudure du second capteur en respectant le brochage. Petit soucis avec le matériel qui à causé une petite perte de temps (env 30min). Réflexion sur les méthodes de communication et comment les coder.
+Soudure du second capteur en respectant le brochage. Petit soucis avec le matériel de soudage qui à causé une petite perte de temps (env 30min). Réflexion sur les méthodes de communication et comment les coder.
 
 ## Apprentissage de la séance
 
-Compréhension des différentes adresses du capteurs et comment les changer. Compréhensio du squellete que devrait avoir le programme pour faire fonctionner
+Compréhension des différentes adresses du capteurs et comment les changer. Compréhension du squellete que devrait avoir le programme pour faire fonctionner
 le capteur.
 
 ## Objectif de la prochaine séance 
@@ -204,8 +204,7 @@ Soudage du troisième capteur CSS811.
 
 ## Apprentissage de la séance
 
-Le fonctionnement du capteur, la communication I2C. L'excistence d'une blibliothéque faite par le fabricant regroupant toutes les fonctions que j'ai voulu coder. 
-
+Modélisation du squellette du programme général.
 
 ## Objectif de la prochaine séance 
 
@@ -223,11 +222,11 @@ Faire fonctionnner 3 capteurs CCS811.
 Ecriture du troisième code pour le fonctionnment des trois capteurs.
 Cepndant je rencontre une erreurs inabituelle : A fatal error occurred: MD5 of file does not match data in flash!
 
-Après quelques recherche, je trouve un moyen de la corriger en remettant l'ESP32 à ses valeurs d'usine avec la commande suivnate : 
+Après quelques recherches, je trouve un moyen de la corriger en remettant l'ESP32 à ses valeurs d'usine avec la commande suivnate : 
 
 esptool --port <YOUR PORT> write_flash_status --non-volatile 0
 
- soltuion trouvée sur ce site : https://community.m5stack.com/topic/838/a-fatal-error-occurred-md5-of-file-does-not-match-data-in-flash/5
+soltuion trouvée sur ce site : https://community.m5stack.com/topic/838/a-fatal-error-occurred-md5-of-file-does-not-match-data-in-flash/5
 
 
 ## Apprentissage de la séance
@@ -248,7 +247,7 @@ Faire fonctionner les trois capteurs.
 
 ## Actions de la séance :
 
-Mise à jour du code. Code fonctionnel pour les trois capteurs. Soummission de la réussite à M.PETER. Le nouvel objectif est désormais de stocker les données de la mesure dans un fichier pour ensuite le récupérer. Recherhce de solution d'écriture, de stockage et de transfert.
+Mise à jour du code. Code fonctionnel pour les trois capteurs. Soummission de la réussite à M.PETER. Le nouvel objectif est désormais de stocker les données de la mesure dans un fichier pour ensuite le récupérer. Recherche de solution d'écriture, de stockage et de transfert.
 
 ## Apprentissage de la séance
 
@@ -335,12 +334,14 @@ Entrée 16 - 17.02.2023 - 16h43 - Sophia Antipolis
 
 ## Objectif de la séance 
 
- Trouver le conflit de librairie et le résoudre.
+Trouver le conflit de librairie et le résoudre.
 
 ## Actions de la séance 
  
+Recherche sur github et internet des issues connue et les moyens de les résoudres. Le conflit de librairie n'est pas réglé.
  
 ## Apprentissage de la séance
+
 
 
 ## Objectif de la prochaine séance 
@@ -429,7 +430,7 @@ Lecture des trois capteurs et prise de leurs mesures sur .csv sur SD : ok.
 Reflexion pour optimisation du confort de la mesure : ok. 
 Mesure et stockage du taux de particule fine .csv : ok.
 Mise en place d'un bouton pour arréter le code : en cours : ok.
-Recherche d'un dispositif pour différencier les mesures : Reporté pour priorisé la mesure.
+Recherche d'un dispositif pour différencier les mesures : Reporté pour prioriser la mesure.
  
 Reorganisation du csv pour mesure.
 
@@ -445,4 +446,33 @@ RAS
 ## Objectif de la prochaine séance 
  
 Refaire le test pour avoir plus de données avec un système qui concentre plus le CO2.
+
+ 
+_____________________________________________________________________________________________________________________________________
+Entrée 21 - 20.04.2023 - 16h45 - Sophia Antipolis
+
+## Objectif de la séance 
+
+Mise en place d'un second test de libérarion de CO2 avec mesure. Analyse des mesures.
+ 
+## Actions de la séance 
+
+Traitement des données d'analyse du premier test : OK.
+Analyse : en cours.
+ 
+Second test : OK.
+Traitement des données d'analyse du second test : OK.
+Analyse : en cours.
+
+Premier retour des analyses peu fructeux. Mise en place en place d'un ultime test par M.PETER chez lui.
+ 
+Travail sur la présentation et les diapositives.
+
+## Apprentissage de la séance
+
+RAS
+
+## Objectif de la prochaine séance 
+ 
+Finir le diaporama et l'analyse des données pour présentation.
 
