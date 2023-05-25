@@ -15,7 +15,7 @@ void setup(){
 }
 
 void loop(){
-    // Increase the brightness of the led in the loop
+    // Increase the speed of the fan
     for(int dutyCycle = 0; dutyCycle <= 255; dutyCycle++){
         ledcWrite(fanChannel, dutyCycle);
         delay(15);
